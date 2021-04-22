@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+int Smallest(int num1, int num2){
+    if(num1 < num2){
+    return num1;
+    }
+    else{
+    return num2;
+    }
+
+}
+
+int main(){
+   cout<<"Enter three Numbers"<<endl;
+    int a,b,c;
+    cin>>a>>b>>c;
+   
+
+
+   cout<<Smallest(Smallest(a,b),c)<<endl;
+    return 0;
+}
