@@ -1,0 +1,20 @@
+#include<stdio.h>
+
+int Smallest(int num1, int num2){
+    if(num1 < num2)
+    return num1;
+    else
+    return num2;
+
+}
+
+int main(){
+    printf("Enter three Numbers \n");
+    int a,b,c;
+    scanf("%d %d %d",a,b,c);
+    int S = Smallest(Smallest(a,b),c);
+
+
+    printf("Smallest Number is %d",S);
+    return 0;
+}
